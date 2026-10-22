@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Инциденты — Smart Campus AI</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="layout"><nav id="nav"></nav><main>
+<h1>Инциденты</h1>
+<div class="card" style="margin-bottom:16px">
+  <div class="toolbar">
+    <input id="title" placeholder="Название инцидента">
+    <select id="room"></select>
+    <select id="priority">
+      <option value="low">Низкий</option>
+      <option value="medium" selected>Средний</option>
+      <option value="high">Высокий</option>
+    </select>
+    <select id="assignee"><option>Инженер</option><option>Оператор</option><option>Администратор</option></select>
+    <input id="comment" placeholder="Комментарий">
+    <button onclick="addInc()">Добавить инцидент</button>
+  </div>
+</div>
+<table>
+  <thead><tr><th>Инцидент</th><th>Помещение</th><th>Приоритет</th><th>Ответственный</th><th>Статус</th><th></th></tr></thead>
+  <tbody id="tbody"></tbody>
+</table>
+</main></div>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/storage.js"></script>
+<script src="assets/js/incidents.js"></script>
+</body></html>

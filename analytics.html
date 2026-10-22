@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analytics — Smart Campus AI</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<div class="layout"><nav id="nav"></nav><main>
+<h1>Analytics</h1>
+<p class="muted">Аномалия: z-score больше 2 и заметное отклонение от обычных значений. Плюс пороги температуры и CO₂.</p>
+<table>
+  <thead>
+    <tr><th>Помещение</th><th>Причина</th><th>Риск</th><th>Рекомендация</th></tr>
+  </thead>
+  <tbody id="tbody"></tbody>
+</table>
+<div class="card" style="margin-top:20px">
+  <div class="toolbar">
+    <h3 style="margin:0">История температуры</h3>
+    <select id="roomSel"></select>
+  </div>
+  <canvas id="tempChart"></canvas>
+</div>
+</main></div>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/storage.js"></script>
+<script src="assets/js/analytics.js"></script>
+</body></html>

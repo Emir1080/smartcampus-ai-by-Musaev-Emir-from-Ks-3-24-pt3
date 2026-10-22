@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Устройства — Smart Campus AI</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="layout"><nav id="nav"></nav><main>
+<h1>Устройства</h1>
+<div class="toolbar">
+  <input id="q" placeholder="Поиск по ID, помещению, типу">
+  <select id="status">
+    <option value="">Любой статус</option>
+    <option value="online">online</option>
+    <option value="offline">offline</option>
+  </select>
+</div>
+<table>
+  <thead><tr><th>ID</th><th>Помещение</th><th>Тип</th><th>Статус</th><th>Значение</th><th>Обновлено</th></tr></thead>
+  <tbody id="tbody"></tbody>
+</table>
+</main></div>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/storage.js"></script>
+<script src="assets/js/devices.js"></script>
+</body></html>

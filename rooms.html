@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Помещения — Smart Campus AI</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="layout"><nav id="nav"></nav><main>
+<h1>Помещения</h1>
+<div class="toolbar">
+  <input id="q" placeholder="Поиск по номеру или типу">
+  <select id="building"><option value="">Все корпуса</option></select>
+  <select id="status">
+    <option value="">Любой статус</option>
+    <option value="normal">Норма</option>
+    <option value="warning">Внимание</option>
+    <option value="critical">Критично</option>
+  </select>
+</div>
+<table>
+  <thead><tr><th>Номер</th><th>Корпус</th><th>Этаж</th><th>Тип</th><th>Темп.</th><th>CO₂</th><th>Людей</th><th>Статус</th></tr></thead>
+  <tbody id="tbody"></tbody>
+</table>
+</main></div>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/storage.js"></script>
+<script src="assets/js/rooms.js"></script>
+</body></html>

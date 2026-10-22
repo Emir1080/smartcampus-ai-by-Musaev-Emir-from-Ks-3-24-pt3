@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard — Smart Campus AI</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<div class="layout"><nav id="nav"></nav><main>
+<h1>Dashboard</h1>
+<div class="grid" id="kpi"></div>
+<div class="grid2">
+  <div class="card"><h3>Энергия по корпусам</h3><canvas id="energyChart"></canvas></div>
+  <div class="card"><h3>CO₂ по помещениям</h3><canvas id="co2Chart"></canvas></div>
+</div>
+<div class="card"><h3>Уведомления</h3><ul class="notes" id="notes"></ul></div>
+</main></div>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/storage.js"></script>
+<script src="assets/js/dashboard.js"></script>
+</body></html>
